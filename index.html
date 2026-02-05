@@ -13,7 +13,6 @@
 
         body { font-family: 'Arial', sans-serif; margin: 0; background-color: var(--light-bg); color: #333; }
 
-        /* Header with Logo */
         header { background-color: var(--navy-blue); color: white; padding: 40px 20px; text-align: center; }
         .logo-img { width: 80px; height: 80px; border-radius: 50%; background: white; margin-bottom: 10px; border: 2px solid white; object-fit: cover; }
         header h1 { margin: 10px 0 5px; font-size: 24px; text-transform: uppercase; }
@@ -23,7 +22,6 @@
         .section-title { text-align: center; color: var(--navy-blue); margin: 40px 0 10px; font-size: 22px; font-weight: bold; text-transform: uppercase; }
         .sub-title { text-align: center; color: #666; font-size: 13px; margin-bottom: 30px; }
 
-        /* Services & Stock Grid */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
         .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 15px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px; transition: 0.3s; }
         .card img { width: 100%; height: 180px; object-fit: cover; background: #eee; }
@@ -31,18 +29,15 @@
         .card p { font-size: 13px; color: #666; padding: 0 15px; margin-bottom: 15px; height: 40px; overflow: hidden; }
         .btn { background: var(--green-btn); color: white; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-size: 12px; }
 
-        /* Add Item Form */
         .add-box { background: #fff; padding: 25px; border-radius: 15px; border: 2px dashed var(--navy-blue); margin: 40px 0; }
         .add-box input, .add-box textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
 
-        /* Clients Section */
         .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; }
         .client-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 20px; }
         .client-item { text-align: center; width: 110px; }
         .client-logo { width: 60px; height: 60px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; }
         .client-item p { font-size: 12px; font-weight: bold; margin: 0; color: var(--navy-blue); }
 
-        /* Footer */
         footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
         .footer-info { font-size: 14px; line-height: 1.8; color: #bbb; }
     </style>
@@ -89,15 +84,39 @@
 
         <div class="add-box">
             <h3 style="text-align: center; color: var(--navy-blue); margin-top: 0;">+ Add New Stock Items</h3>
-            <input type="text" id="itemName" placeholder="Item Name (e.g. Printer)">
-            <textarea id="itemDesc" placeholder="Brief details about the item"></textarea>
+            <input type="text" id="itemName" placeholder="Item Name">
+            <textarea id="itemDesc" placeholder="Brief details"></textarea>
             <input type="text" id="imgUrl" placeholder="Image Filename (e.g. Printer.jpeg)">
             <button class="btn" style="width:100%; padding: 15px;" onclick="addItem()">Add to Inventory</button>
         </div>
 
         <div class="section-title">Latest Stock</div>
         <div class="grid" id="stockContainer">
+            <div class="card">
+                <img src="Printer.jpeg" alt="Printer">
+                <h3>Printers</h3>
+                <p>High-quality laser and inkjet printers for all your needs.</p>
+                <button class="btn">View Details</button>
             </div>
+            <div class="card">
+                <img src="desktop stock.jpeg" alt="Desktop Stock">
+                <h3>Branded Desktops</h3>
+                <p>Latest generation powerful desktop systems in stock.</p>
+                <button class="btn">Check Stock</button>
+            </div>
+            <div class="card">
+                <img src="attendance machine stock.jpeg" alt="Attendance Machine">
+                <h3>Attendance Machines</h3>
+                <p>Biometric and RFID based smart attendance solutions.</p>
+                <button class="btn">Get Quote</button>
+            </div>
+            <div class="card">
+                <img src="iris imager stock .jpeg" alt="Iris Imager">
+                <h3>Iris Imager</h3>
+                <p>High-precision iris scanners for secure identification.</p>
+                <button class="btn">More Info</button>
+            </div>
+        </div>
 
         <div class="client-section">
             <div class="section-title">Our Valued Clients</div>
@@ -154,7 +173,6 @@
             `;
             container.prepend(newCard);
 
-            // Clear inputs
             document.getElementById('itemName').value = '';
             document.getElementById('itemDesc').value = '';
             document.getElementById('imgUrl').value = '';
