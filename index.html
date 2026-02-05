@@ -9,9 +9,10 @@
             --navy-blue: #001f3f;
             --light-bg: #f4f7f9;
             --green-btn: #28a745;
+            --gov-red: #d9534f;
         }
 
-        body { font-family: 'Arial', sans-serif; margin: 0; background-color: var(--light-bg); color: #333; }
+        body { font-family: 'Arial', sans-serif; margin: 0; background-color: var(--light-bg); color: #333; scroll-behavior: smooth; }
 
         header { background-color: var(--navy-blue); color: white; padding: 40px 20px; text-align: center; }
         .logo-img { width: 80px; height: 80px; border-radius: 50%; background: white; margin-bottom: 10px; border: 2px solid white; object-fit: cover; }
@@ -29,11 +30,15 @@
         .card p { font-size: 13px; color: #666; padding: 0 15px; margin-bottom: 15px; height: 40px; overflow: hidden; }
         .btn { background: var(--green-btn); color: white; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-size: 12px; }
 
-        .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; }
+        /* Government Client Section */
+        .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; text-align: center; }
+        .gov-toggle-btn { background: var(--gov-red); color: white; border: none; padding: 12px 30px; border-radius: 5px; font-weight: bold; cursor: pointer; margin-bottom: 20px; font-size: 16px; }
+        
+        #gov-clients-box { display: none; padding-top: 20px; border-top: 1px solid #eee; }
         .client-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 20px; }
-        .client-item { text-align: center; width: 110px; }
-        .client-logo { width: 60px; height: 60px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; }
-        .client-item p { font-size: 12px; font-weight: bold; margin: 0; color: var(--navy-blue); }
+        .client-item { text-align: center; width: 130px; }
+        .client-logo { width: 70px; height: 70px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; background: #fff; }
+        .client-item p { font-size: 11px; font-weight: bold; margin: 0; color: var(--navy-blue); line-height: 1.2; }
 
         footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
         .footer-info { font-size: 14px; line-height: 1.8; color: #bbb; }
@@ -97,46 +102,4 @@
                 <img src="attendance machine stock.jpeg" alt="Attendance Machine">
                 <h3>Attendance Machines</h3>
                 <p>Biometric and RFID based smart attendance solutions.</p>
-                <button class="btn">Get Quote</button>
-            </div>
-            <div class="card">
-                <img src="iris imager stock .jpeg" alt="Iris Imager">
-                <h3>Iris Imager</h3>
-                <p>High-precision iris scanners for secure identification.</p>
-                <button class="btn">More Info</button>
-            </div>
-        </div>
-
-        <div class="client-section">
-            <div class="section-title">Our Valued Clients</div>
-            <div class="client-list">
-                <div class="client-item">
-                    <img src="college.jpeg" class="client-logo">
-                    <p>Educational Inst.</p>
-                </div>
-                <div class="client-item">
-                    <img src="Hospital.jpeg" class="client-logo">
-                    <p>Medical Centers</p>
-                </div>
-                <div class="client-item">
-                    <img src="nepal-government-logo.png" class="client-logo">
-                    <p>Govt. Offices</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <div class="footer-info">
-            <p>📍 <b>Address:</b> Near NMC College, Birgunj, Nepal</p>
-            <p>📞 <b>Contact:</b> +977-9855016848</p>
-            <p>📧 <b>Email:</b> info@hitechbirgunj.com</p>
-            <div style="margin-top:20px; border-top: 1px solid #333; padding-top:20px; font-size:12px; color: #666;">
-                © 2026 Hitech Computer Suppliers. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                
