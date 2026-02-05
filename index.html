@@ -1,89 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitech Computer Suppliers</title>
+    <title>Business Management Portal</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #1c1e21; }
-        header { background: #002651; color: white; padding: 40px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        
-        .services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 30px; }
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); width: 320px; transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        
-        /* Image Setup */
-        .card img { width: 100%; height: 220px; object-fit: cover; cursor: pointer; display: block; }
-        
-        .card-content { padding: 20px; text-align: center; }
-        .card-content h3 { color: #002651; margin: 10px 0; font-size: 1.4rem; }
-        .card-content p { color: #606770; font-size: 0.95rem; line-height: 1.5; }
-        
-        .btn-call { display: inline-block; background: #28a745; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 15px; transition: 0.2s; }
-        .btn-call:hover { background: #218838; }
+        :root {
+            --primary-blue: #001f3f; /* Screenshot jaisa dark blue */
+            --green-btn: #28a745;
+            --bg-light: #f4f7f6;
+        }
 
-        footer { background: #1c1e21; color: white; text-align: center; padding: 30px; margin-top: 50px; }
-        .contact-box { font-size: 0.9rem; opacity: 0.9; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: var(--bg-light); text-align: center; }
+
+        /* Header Section */
+        header { background: var(--primary-blue); color: white; padding: 30px 10px; }
+        .company-logo { width: 80px; height: 80px; border-radius: 50%; background: white; margin-bottom: 10px; }
+        header h1 { margin: 5px 0; font-size: 24px; letter-spacing: 1px; }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 15px; }
+
+        /* Client Section */
+        .section-title { color: #333; margin-bottom: 20px; border-bottom: 2px solid var(--primary-blue); display: inline-block; padding-bottom: 5px; }
+        .client-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 40px; }
+        .client-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .client-logo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+
+        /* Saman (Inventory) Grid */
+        .item-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .item-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding-bottom: 15px; }
+        .item-img { width: 100%; height: 180px; object-fit: cover; background: #eee; }
+        .item-card h3 { color: var(--primary-blue); margin: 15px 0 5px; }
+        .item-card p { color: #666; font-size: 14px; padding: 0 10px; height: 40px; }
+        .btn-action { background: var(--green-btn); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 10px; }
+
+        /* Add Item Form */
+        .add-form { background: white; padding: 25px; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .add-form input, .add-form textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        
+        footer { background: #1a1a1a; color: #ccc; padding: 20px; margin-top: 40px; font-size: 13px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>HITECH COMPUTER SUPPLIERS</h1>
-    <p>Professional IT Solutions & Services in Birgunj</p>
-</header>
+    <header>
+        <img src="https://via.placeholder.com/80" alt="Company Logo" class="company-logo">
+        <h1>MERE BUSINESS KA NAAM</h1>
+        <p>Professional Solutions & Services</p>
+    </header>
 
-<div class="container">
-    <h2 style="text-align: center; color: #002651;">Our Core Services</h2>
-    <p style="text-align: center; color: #666;">Click on any image to enlarge</p>
-
-    <div class="services-grid">
+    <div class="container">
         
-        <div class="card">
-            <a href="Desktop.jpg" target="_blank">
-                <img src="Desktop.jpg" alt="Desktops">
-            </a>
-            <div class="card-content">
+        <h2 class="section-title">Hamare Vishwasniya Clients</h2>
+        <div class="client-grid">
+            <div class="client-card">
+                <img src="https://via.placeholder.com/50" class="client-logo">
+                <h4>Client A</h4>
+            </div>
+            <div class="client-card">
+                <img src="https://via.placeholder.com/50" class="client-logo">
+                <h4>Client B</h4>
+            </div>
+            <div class="client-card">
+                <img src="https://via.placeholder.com/50" class="client-logo">
+                <h4>Client C</h4>
+            </div>
+        </div>
+
+        <div class="add-form">
+            <h2 class="section-title">Naya Saman Add Karein</h2>
+            <input type="text" id="itemName" placeholder="Saman ka Naam (e.g. Dell Laptop)">
+            <textarea id="itemDesc" placeholder="Chhota vivran (Description)"></textarea>
+            <input type="text" id="itemImg" placeholder="Image URL (Optionally)">
+            <button class="btn-action" onclick="addNewItem()" style="width: 100%;">List Mein Shamil Karein</button>
+        </div>
+
+        <h2 class="section-title">Hamara Stock</h2>
+        <div class="item-grid" id="itemContainer">
+            <div class="item-card">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6" class="item-img">
                 <h3>Desktops & Systems</h3>
-                <p>Branded and assembled desktop PCs for office and home use.</p>
-                <a href="tel:9855016848" class="btn-call">Enquire Now</a>
+                <p>Branded and assembled desktop PCs for office use.</p>
+                <button class="btn-action">Enquire Now</button>
             </div>
         </div>
-
-        <div class="card">
-            <a href="laptop.jpg" target="_blank">
-                <img src="laptop.jpg" alt="Laptops">
-            </a>
-            <div class="card-content">
-                <h3>Laptops & Notebooks</h3>
-                <p>Sales and expert chip-level repairing of all laptop brands.</p>
-                <a href="tel:9855016848" class="btn-call">Call Expert</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <a href="CCTV.jpg" target="_blank">
-                <img src="Desktop.jpg" alt="CCTV">
-            </a>
-            <div class="card-content">
-                <h3>CCTV & Security</h3>
-                <p>Advanced surveillance systems for 24/7 safety and monitoring.</p>
-                <a href="tel:9855016848" class="btn-call">Book Installation</a>
-            </div>
-        </div>
-
     </div>
-</div>
 
-<footer>
-    <div class="contact-box">
-        <p><strong>📍 Address:</strong> Near NMC College, Birgunj, Nepal</p>
-        <p><strong>📞 Contact:</strong> +977-9855016848</p>
-        <p><strong>✉️ Email:</strong> info@hitechbirgunj.com</p>
-    </div>
-    <p style="margin-top:20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Hitech Computer Suppliers. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>📍 Address: Aapka Pata Yahan Likhein</p>
+        <p>📞 Contact: +91 0000000000 | 📧 Email: info@example.com</p>
+        <p>© 2024 Your Company. All rights reserved.</p>
+    </footer>
 
+    <script>
+        function addNewItem() {
+            const name = document.getElementById('itemName').value;
+            const desc = document.getElementById('itemDesc').value;
+            let img = document.getElementById('itemImg').value;
+
+            if(name === "" || desc === "") {
+                alert("Kripya Naam aur Description bharein!");
+                return;
+            }
+
+            if(img === "") img = "https://via.placeholder.com/300x180?text=No+Image";
+
+            const container = document.getElementById('itemContainer');
+            
+            // Naya card banane ka tarika
+            const card = document.createElement('div');
+            card.className = 'item-card';
+            card.innerHTML = `
+                <img src="${img}" class="item-img">
+                <h3>${name}</h3>
+                <p>${desc}</p>
+                <button class="btn-action">Enquire Now</button>
+            `;
+
+            container.prepend(card); // Naya saman sabse upar dikhega
+
+            // Form saaf karne ke liye
+            document.getElementById('itemName').value = "";
+            document.getElementById('itemDesc').value = "";
+            document.getElementById('itemImg').value = "";
+        }
+    </script>
 </body>
 </html>
