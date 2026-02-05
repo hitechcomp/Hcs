@@ -102,4 +102,71 @@
                 <img src="attendance machine stock.jpeg" alt="Attendance Machine">
                 <h3>Attendance Machines</h3>
                 <p>Biometric and RFID based smart attendance solutions.</p>
-                
+                <button class="btn">Get Quote</button>
+            </div>
+            <div class="card">
+                <img src="iris imager stock .jpeg" alt="Iris Imager">
+                <h3>Iris Imager</h3>
+                <p>High-precision iris scanners for secure identification.</p>
+                <button class="btn">More Info</button>
+            </div>
+        </div>
+
+        <div class="client-section">
+            <button class="gov-toggle-btn" onclick="toggleGovClients()">Our Government Clients (Click to View)</button>
+            
+            <div id="gov-clients-box">
+                <div class="client-list">
+                    <div class="client-item">
+                        <img src="parsagadhi Municipality.jpeg" class="client-logo">
+                        <p>Parsagadhi Municipality</p>
+                    </div>
+                    <div class="client-item">
+                        <img src="jeetpur simara sub metropolitan .jpeg" class="client-logo">
+                        <p>Jeetpur Simara Sub-Metro</p>
+                    </div>
+                    <div class="client-item">
+                        <img src="Bishrampur rural municipality.png" class="client-logo">
+                        <p>Bishrampur Rural Municipality</p>
+                    </div>
+                    <div class="client-item">
+                        <img src="Prasauni rural municipality.jpeg" class="client-logo">
+                        <p>Prasauni Rural Municipality</p>
+                    </div>
+                    <div class="client-item">
+                        <img src="nepal police janakpur.jpeg" class="client-logo">
+                        <p>Nepal Police Janakpur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>📍 <b>Address:</b> Near NMC College, Birgunj, Nepal</p>
+            <p>📞 <b>Contact:</b> +977-9855016848</p>
+            <p>📧 <b>Email:</b> info@hitechbirgunj.com</p>
+            <div style="margin-top:20px; border-top: 1px solid #333; padding-top:20px; font-size:12px; color: #666;">
+                © 2026 Hitech Computer Suppliers. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleGovClients() {
+            var x = document.getElementById("gov-clients-box");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                // Scroll to the clients box
+                setTimeout(() => {
+                    x.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>
