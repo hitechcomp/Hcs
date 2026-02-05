@@ -13,47 +13,44 @@
 
         body { font-family: 'Arial', sans-serif; margin: 0; background-color: var(--light-bg); color: #333; }
 
-        /* Header */
+        /* Header with Logo */
         header { background-color: var(--navy-blue); color: white; padding: 40px 20px; text-align: center; }
-        .logo-placeholder { width: 70px; height: 70px; border-radius: 50%; background: white; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; color: var(--navy-blue); font-weight: bold; overflow: hidden; }
-        .logo-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+        .logo-img { width: 80px; height: 80px; border-radius: 50%; background: white; margin-bottom: 10px; border: 2px solid white; object-fit: cover; }
+        header h1 { margin: 10px 0 5px; font-size: 24px; text-transform: uppercase; }
+        header p { margin: 0; font-size: 14px; opacity: 0.8; }
 
         .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .section-title { text-align: center; color: var(--navy-blue); margin: 40px 0 10px; font-size: 24px; font-weight: bold; text-transform: uppercase; }
-        .sub-title { text-align: center; color: #666; font-size: 14px; margin-bottom: 30px; }
+        .section-title { text-align: center; color: var(--navy-blue); margin: 40px 0 10px; font-size: 22px; font-weight: bold; text-transform: uppercase; }
+        .sub-title { text-align: center; color: #666; font-size: 13px; margin-bottom: 30px; }
 
-        /* Core Services & Stock Cards */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        /* Services & Stock Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
         .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 15px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 180px; object-fit: cover; }
+        .card img { width: 100%; height: 180px; object-fit: cover; background: #eee; }
         .card h3 { margin: 15px 0 5px; color: var(--navy-blue); font-size: 17px; }
-        .card p { font-size: 13px; color: #666; padding: 0 15px; margin-bottom: 15px; height: 35px; overflow: hidden; }
-        .btn { background: var(--green-btn); color: white; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-size: 13px; }
+        .card p { font-size: 13px; color: #666; padding: 0 15px; margin-bottom: 15px; height: 40px; overflow: hidden; }
+        .btn { background: var(--green-btn); color: white; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-size: 12px; }
 
-        /* Add New Stock Form */
+        /* Add Item Form */
         .add-box { background: #fff; padding: 25px; border-radius: 15px; border: 2px dashed var(--navy-blue); margin: 40px 0; }
-        .add-box h3 { margin-top: 0; color: var(--navy-blue); text-align: center; }
         .add-box input, .add-box textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
 
-        /* Client Section */
-        .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .client-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px; }
+        /* Clients Section */
+        .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; }
+        .client-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 20px; }
         .client-item { text-align: center; width: 110px; }
-        .client-logo { width: 65px; height: 65px; border-radius: 50%; border: 2px solid #eee; margin-bottom: 10px; object-fit: cover; }
+        .client-logo { width: 60px; height: 60px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; }
+        .client-item p { font-size: 12px; font-weight: bold; margin: 0; color: var(--navy-blue); }
 
         /* Footer */
-        footer { background: #111; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
-        .footer-content p { margin: 8px 0; font-size: 14px; color: #bbb; }
-        .footer-content b { color: white; }
+        footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
+        .footer-info { font-size: 14px; line-height: 1.8; color: #bbb; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo-placeholder">
-            <img src="https://via.placeholder.com/70" alt="Logo">
-        </div>
+        <img src="Logo hitech .jpg" alt="Hitech Logo" class="logo-img">
         <h1>HITECH COMPUTER SUPPLIERS</h1>
         <p>Professional IT Solutions & Services in Birgunj</p>
     </header>
@@ -65,40 +62,40 @@
         
         <div class="grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6" alt="Desktop">
+                <img src="Desktop.jpg" alt="Desktop">
                 <h3>Desktops & Systems</h3>
-                <p>Branded and assembled desktop PCs for office and home.</p>
+                <p>Branded and assembled desktop PCs for office and home use.</p>
                 <button class="btn">Enquire Now</button>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+                <img src="laptop.jpg" alt="Laptop">
                 <h3>Laptops & Notebooks</h3>
-                <p>Sales and expert chip-level repairing of all brands.</p>
+                <p>Sales and expert chip-level repairing of all laptop brands.</p>
                 <button class="btn">Call Expert</button>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1557597774-9d2739f85a94" alt="CCTV">
+                <img src="CCTV.jpg" alt="CCTV">
                 <h3>CCTV Surveillance</h3>
-                <p>High-quality IP & Analog camera installation services.</p>
-                <button class="btn">View Cameras</button>
+                <p>Advanced IP and Analog camera systems for 24/7 monitoring.</p>
+                <button class="btn">Installation</button>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="Security">
+                <img src="cyber security.png" alt="Security">
                 <h3>Security Solutions</h3>
-                <p>Biometric attendance and advanced alarm systems.</p>
-                <button class="btn">Get Quote</button>
+                <p>Biometric, Alarm systems, and Network security for your business.</p>
+                <button class="btn">Get Security</button>
             </div>
         </div>
 
         <div class="add-box">
-            <h3>+ Add New Stock Saman</h3>
-            <input type="text" id="name" placeholder="Item Name (e.g. Dell Monitor)">
-            <textarea id="desc" placeholder="Item Description"></textarea>
-            <input type="text" id="imgUrl" placeholder="Image URL (Link)">
-            <button class="btn" style="width:100%; padding: 15px;" onclick="addStock()">Add to Stock List</button>
+            <h3 style="text-align: center; color: var(--navy-blue); margin-top: 0;">+ Add New Stock Items</h3>
+            <input type="text" id="itemName" placeholder="Item Name (e.g. Printer)">
+            <textarea id="itemDesc" placeholder="Brief details about the item"></textarea>
+            <input type="text" id="imgUrl" placeholder="Image Filename (e.g. Printer.jpeg)">
+            <button class="btn" style="width:100%; padding: 15px;" onclick="addItem()">Add to Inventory</button>
         </div>
 
-        <div class="section-title">Our Latest Stock</div>
+        <div class="section-title">Latest Stock</div>
         <div class="grid" id="stockContainer">
             </div>
 
@@ -106,16 +103,16 @@
             <div class="section-title">Our Valued Clients</div>
             <div class="client-list">
                 <div class="client-item">
-                    <img src="https://via.placeholder.com/65" class="client-logo">
-                    <p><b>NMC College</b></p>
+                    <img src="college.jpeg" class="client-logo">
+                    <p>Educational Inst.</p>
                 </div>
                 <div class="client-item">
-                    <img src="https://via.placeholder.com/65" class="client-logo">
-                    <p><b>Bank of Asia</b></p>
+                    <img src="Hospital.jpeg" class="client-logo">
+                    <p>Medical Centers</p>
                 </div>
                 <div class="client-item">
-                    <img src="https://via.placeholder.com/65" class="client-logo">
-                    <p><b>Public School</b></p>
+                    <img src="nepal-government-logo.png" class="client-logo">
+                    <p>Govt. Offices</p>
                 </div>
             </div>
         </div>
@@ -123,20 +120,20 @@
     </div>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-info">
             <p>📍 <b>Address:</b> Near NMC College, Birgunj, Nepal</p>
             <p>📞 <b>Contact:</b> +977-9855016848</p>
             <p>📧 <b>Email:</b> info@hitechbirgunj.com</p>
-            <div style="margin-top:25px; border-top: 1px solid #333; padding-top:20px; font-size:12px; color: #777;">
+            <div style="margin-top:20px; border-top: 1px solid #333; padding-top:20px; font-size:12px; color: #666;">
                 © 2026 Hitech Computer Suppliers. All rights reserved.
             </div>
         </div>
     </footer>
 
     <script>
-        function addStock() {
-            const name = document.getElementById('name').value;
-            const desc = document.getElementById('desc').value;
+        function addItem() {
+            const name = document.getElementById('itemName').value;
+            const desc = document.getElementById('itemDesc').value;
             let img = document.getElementById('imgUrl').value;
 
             if(!name || !desc) {
@@ -144,7 +141,7 @@
                 return;
             }
 
-            if(!img) img = "https://via.placeholder.com/300x200?text=Computer+Parts";
+            if(!img) img = "https://via.placeholder.com/300x200?text=IT+Stock";
 
             const container = document.getElementById('stockContainer');
             const newCard = document.createElement('div');
@@ -158,8 +155,8 @@
             container.prepend(newCard);
 
             // Clear inputs
-            document.getElementById('name').value = '';
-            document.getElementById('desc').value = '';
+            document.getElementById('itemName').value = '';
+            document.getElementById('itemDesc').value = '';
             document.getElementById('imgUrl').value = '';
         }
     </script>
