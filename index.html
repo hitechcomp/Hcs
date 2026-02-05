@@ -30,14 +30,14 @@
         .card p { font-size: 13px; color: #666; padding: 0 15px; margin-bottom: 15px; height: 40px; overflow: hidden; }
         .btn { background: var(--green-btn); color: white; border: none; padding: 10px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-size: 12px; }
 
-        /* Government Client Section */
+        /* Client Section */
         .client-section { background: white; padding: 30px 10px; border-radius: 15px; margin-top: 40px; text-align: center; }
-        .gov-toggle-btn { background: var(--gov-red); color: white; border: none; padding: 12px 30px; border-radius: 5px; font-weight: bold; cursor: pointer; margin-bottom: 20px; font-size: 16px; }
+        .gov-toggle-btn { background: var(--gov-red); color: white; border: none; padding: 15px 30px; border-radius: 5px; font-weight: bold; cursor: pointer; margin-bottom: 20px; font-size: 16px; width: 100%; max-width: 500px; }
         
         #gov-clients-box { display: none; padding-top: 20px; border-top: 1px solid #eee; }
         .client-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 20px; }
         .client-item { text-align: center; width: 130px; }
-        .client-logo { width: 70px; height: 70px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; background: #fff; }
+        .client-logo { width: 75px; height: 75px; border-radius: 50%; border: 1px solid #eee; margin-bottom: 8px; object-fit: cover; background: #fff; padding: 2px; }
         .client-item p { font-size: 11px; font-weight: bold; margin: 0; color: var(--navy-blue); line-height: 1.2; }
 
         footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
@@ -55,8 +55,6 @@
     <div class="container">
         
         <div class="section-title">Our Core Services</div>
-        <p class="sub-title">Click on any image to enlarge</p>
-        
         <div class="grid">
             <div class="card">
                 <img src="Desktop.jpg" alt="Desktop">
@@ -79,7 +77,7 @@
             <div class="card">
                 <img src="cyber security.png" alt="Security">
                 <h3>Security Solutions</h3>
-                <p>Biometric, Alarm systems, and Network security for your business.</p>
+                <p>Biometric, Alarm systems, and Network security solutions.</p>
                 <button class="btn">Get Security</button>
             </div>
         </div>
@@ -89,33 +87,34 @@
             <div class="card">
                 <img src="Printer.jpeg" alt="Printer">
                 <h3>Printers</h3>
-                <p>High-quality laser and inkjet printers for all your needs.</p>
+                <p>High-quality laser and inkjet printers in stock.</p>
                 <button class="btn">View Details</button>
             </div>
             <div class="card">
                 <img src="desktop stock.jpeg" alt="Desktop Stock">
                 <h3>Branded Desktops</h3>
-                <p>Latest generation powerful desktop systems in stock.</p>
+                <p>Latest generation powerful desktop systems available.</p>
                 <button class="btn">Check Stock</button>
             </div>
             <div class="card">
                 <img src="attendance machine stock.jpeg" alt="Attendance Machine">
                 <h3>Attendance Machines</h3>
-                <p>Biometric and RFID based smart attendance solutions.</p>
+                <p>Smart biometric attendance solutions for offices.</p>
                 <button class="btn">Get Quote</button>
             </div>
             <div class="card">
                 <img src="iris imager stock .jpeg" alt="Iris Imager">
                 <h3>Iris Imager</h3>
-                <p>High-precision iris scanners for secure identification.</p>
+                <p>Secure iris identification systems in inventory.</p>
                 <button class="btn">More Info</button>
             </div>
         </div>
 
         <div class="client-section">
-            <button class="gov-toggle-btn" onclick="toggleGovClients()">Our Government Clients (Click to View)</button>
+            <button class="gov-toggle-btn" onclick="toggleGovClients()">Our Valued & Government Clients (Click to View)</button>
             
             <div id="gov-clients-box">
+                <h4 style="color: var(--gov-red);">Government Offices</h4>
                 <div class="client-list">
                     <div class="client-item">
                         <img src="parsagadhi Municipality.jpeg" class="client-logo">
@@ -136,6 +135,20 @@
                     <div class="client-item">
                         <img src="nepal police janakpur.jpeg" class="client-logo">
                         <p>Nepal Police Janakpur</p>
+                    </div>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+                <h4 style="color: var(--navy-blue);">Educational & Medical Institutions</h4>
+                <div class="client-list">
+                    <div class="client-item">
+                        <img src="college.jpeg" class="client-logo">
+                        <p>Schools & Colleges</p>
+                    </div>
+                    <div class="client-item">
+                        <img src="Hospital.jpeg" class="client-logo">
+                        <p>Hospitals & Clinics</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +174,6 @@
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
-                // Scroll to the clients box
                 setTimeout(() => {
                     x.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
