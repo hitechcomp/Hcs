@@ -1,82 +1,83 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitech Computer Suppliers - Birgunj</title>
+    <title>Hitech Computer Suppliers</title>
     <style>
-        /* Design (CSS) - Isse website sundar dikhegi */
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
-        header { background: #002651; color: white; padding: 20px; }
-        .container { padding: 20px; }
-        .service-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        /* Modern Design */
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
+        header { background: #003366; color: white; padding: 30px 10px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
         
-        /* Card Style */
-        .card { background: white; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; overflow: hidden; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
+        /* Grid System for Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: scale(1.03); }
         
-        /* Image Style - Clickable */
-        .card img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
+        /* Image Style */
+        .card img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; border-bottom: 3px solid #003366; }
         
-        .card-content { padding: 15px; }
-        .btn { display: inline-block; background: #002651; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .contact-info { background: #eee; padding: 20px; margin-top: 20px; }
+        .card-body { padding: 20px; }
+        .card-body h3 { margin: 10px 0; color: #003366; }
+        .btn { display: inline-block; background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Hitech Computer Suppliers</h1>
-    <p>Your One-Stop Solution for IT & Electronics</p>
+    <h1>HITECH COMPUTER SUPPLIERS</h1>
+    <p>Birgunj, Nepal | Professional IT Services</p>
 </header>
 
 <div class="container">
-    <h2>Our Professional Services</h2>
-    <p>Click on the images to see them clearly</p>
+    <h2 style="text-align: center;">Our Specialized Services</h2>
+    <p style="text-align: center; color: #666;">Click on any image to view it full size</p>
 
-    <div class="service-container">
+    <div class="services-grid">
         
         <div class="card">
-            <a href="laptop.jpg" target="_blank">
-                <img src="laptop.jpg" alt="Laptop Service">
+            <a href="images (33).jpeg" target="_blank">
+                <img src="images (33).jpeg" alt="Laptop Service">
             </a>
-            <div class="card-content">
-                <h3>Laptops & Desktops</h3>
-                <p>Sales and expert repair of all major brands.</p>
-                <a href="tel:9855016848" class="btn">Call Now</a>
+            <div class="card-body">
+                <h3>Laptop & Desktop</h3>
+                <p>Repairing and Sales of all major brands.</p>
+                <a href="tel:9855016848" class="btn">Call Expert</a>
             </div>
         </div>
 
         <div class="card">
-            <a href="cctv.jpg" target="_blank">
-                <img src="cctv.jpg" alt="CCTV Camera">
+            <a href="images (34).jpeg" target="_blank">
+                <img src="images (34).jpeg" alt="CCTV Camera">
             </a>
-            <div class="card-content">
+            <div class="card-body">
                 <h3>CCTV & Security</h3>
-                <p>Advanced security solutions for home and office.</p>
-                <a href="tel:9855016848" class="btn">Enquire</a>
+                <p>High-quality surveillance camera installation.</p>
+                <a href="tel:9855016848" class="btn">Get Quote</a>
             </div>
         </div>
 
         <div class="card">
-            <a href="repair.jpg" target="_blank">
-                <img src="repair.jpg" alt="Repairing Service">
+            <a href="images (35).jpeg" target="_blank">
+                <img src="images (35).jpeg" alt="Chip Level Repair">
             </a>
-            <div class="card-content">
-                <h3>Expert Repairing</h3>
-                <p>Chip-level repairing and software solutions.</p>
-                <a href="tel:9855016848" class="btn">Contact</a>
+            <div class="card-body">
+                <h3>Chip Level Repair</h3>
+                <p>Motherboard and electronic component service.</p>
+                <a href="tel:9855016848" class="btn">Contact Us</a>
             </div>
         </div>
 
     </div>
 </div>
 
-<div class="contact-info">
-    <h3>📍 Location</h3>
-    <p>Birgunj, Nepal (Near NMC College)</p>
-    <p>📞 Phone: 9855016848</p>
-</div>
+<footer>
+    <p>📍 Location: Near NMC College, Birgunj</p>
+    <p>📞 Contact: 9855016848 | ✉️ info@hitechbirgunj.com</p>
+</footer>
 
 </body>
 </html>
